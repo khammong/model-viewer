@@ -52,11 +52,17 @@ limitations under the License.
 <script nomodule
     src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
 </script>
-<model-viewer src="third_party/DamagedHelmet/DamagedHelmet.gltf"
+<model-viewer
+              src="third_party/model/model.gltf"
+              ios-src='third_party/model/model.gltf'
               ar
-                 camera-orbit="-20deg 75deg 2m"
-              auto-rotate camera-controls
-                 stage-light-intensity="3" environment-intensity="2"
+              background-color='red'
+              camera-orbit="-20deg 75deg 2m"
+              auto-rotate
+              camera-controls
+              unstable-webxr
+              magic-leap
+              stage-light-intensity="3" environment-intensity="2"
               alt="A 3D model of a damaged sci-fi helmet">
 </model-viewer>
 </body>
