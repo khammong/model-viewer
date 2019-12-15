@@ -35,10 +35,10 @@ limitations under the License.
 <script src="https://unpkg.com/resize-observer-polyfill@1.5.1/dist/ResizeObserver.js"></script>
 
 <!-- 💁 OPTIONAL: Fullscreen polyfill is required for experimental AR features in Canary -->
-<!--<script src="https://unpkg.com/fullscreen-polyfill@1.0.2/dist/fullscreen.polyfill.js"></script>-->
+<script src="https://unpkg.com/fullscreen-polyfill@1.0.2/dist/fullscreen.polyfill.js"></script>
 
 <!-- 💁 OPTIONAL: Include prismatic.js for Magic Leap support -->
-<!--<script src="https://unpkg.com/@magicleap/prismatic@0.18.2/prismatic.min.js"></script>-->
+<script src="https://unpkg.com/@magicleap/prismatic@0.18.2/prismatic.min.js"></script>
   </head>
 <body>
   <!-- 💁 Include both scripts below to support all browsers! -->
@@ -52,9 +52,9 @@ limitations under the License.
 <script nomodule
     src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
 </script>
-<model-viewer
-              src="third_party/model/model.gltf"
-              ios-src='third_party/model/model.gltf'
+
+<model-viewer src="third_party/model/model.gltf"
+              ios-src="third_party/model/model.gltf"
               ar
               background-color='red'
               camera-orbit="-20deg 75deg 2m"
@@ -63,7 +63,8 @@ limitations under the License.
               unstable-webxr
               magic-leap
               stage-light-intensity="3" environment-intensity="2"
-              alt="A 3D model of a damaged sci-fi helmet">
+              environment-image="third_party/model/model.gltf"
+              alt="Santa">
 </model-viewer>
 </body>
 </html>
